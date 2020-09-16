@@ -2,17 +2,17 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=.85in]{geometry}
+\usepackage[margin=1.25in]{geometry}
 
 \titleformat{\section}
-{\huge\bfseries}
+{\huge}
 {}
 {0em}
-{}[\titlerule]
+{\bfseries}[\titlerule]
 
 \titleformat{\subsection}
 {\bfseries\Large}
-{$\bullet$}
+{\hspace{-.25in}$\bullet$}
 {0em}
 {}
 
@@ -20,12 +20,18 @@
 {\bfseries}
 {}
 {0em}
-{}
+{}[:]
 
+\titlespacing{\subsubsection}
+{1em}{.25em}{1em}
 
 \renewcommand{\maketitle}{
 \begin{center}
 {\huge\bfseries\theauthor}
+
+\vspace{.25em}
+
+{\large\bfseries Software Developer}
 
 \vspace{.25em}
 
@@ -48,11 +54,15 @@ https://francoacg.com - info@francoacg.com
 
 Oct 2017 - Mar 2018, San Antonio, Edo. Miranda, Venezuela
 
+\vspace{.25em}
+
 Developing management systems with \textbf{Javascript (vanilla and jQuery), PHP (the company's own framework), PostgreSQL and Git}
 
 \subsection{Software Developer, Aleli Inform\'atica}
 
 Jul 2018 - Sep 2020, Paraguay (remotely)
+
+\vspace{.25em}
 
 Developing and maintaining multiple management systems with
 \textbf{Git, PHP (Codeigniter and Laravel), Javascript (vanilla, jQuery and multiple libraries)}
@@ -86,11 +96,17 @@ Multiple online courses at \textbf{Platzi} such as \textbf{Git, Github and Gitla
 
 \subsection{Languages}
 
+\subsubsection{Can read and speak}
+
 Spanish (native), English (intermediate).
 
 \subsubsection{Programming}
 
 JavaScript, C/C++, PHP, JSX
+
+\subsubsection{Scripting}
+
+Python, Bash
 
 \subsubsection{Libraries and Frameworks}
 
